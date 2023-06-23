@@ -1,4 +1,4 @@
-
+-- CRIAÇÃO DE TABELAS
 CREATE TABLE Departamentos (
                 departamento_id INTEGER NOT NULL,
                 area VARCHAR(100) NOT NULL,
@@ -118,7 +118,7 @@ CREATE TABLE Enderecos (
 );
 COMMENT ON TABLE Enderecos IS 'Tabela que armazena os endereços dos funcionarios';
 
-
+-- FKS
 ALTER TABLE Funcionarios ADD CONSTRAINT departamentos_funcion_rios_fk
 FOREIGN KEY (departamento_id)
 REFERENCES Departamentos (departamento_id)
